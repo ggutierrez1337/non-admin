@@ -1,0 +1,304 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgb (0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(53,50,153, 0.2);
+    border-radius: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background-color: rgb(53,50,153, 0.2);
+   cursor: pointer;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page .sidebar {
+    height: 100vh;
+    width: 300px;
+    background: linear-gradient(0deg, #ff00cc, #333399);
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.8s ease;
+    z-index: 999;
+}
+
+
+.page .content {
+    margin-left: 300px;
+    transition: all 0.8s ease;
+}
+
+/* Moves sidebar inward*/
+body.active .page .sidebar {
+    left: -300px;
+}
+
+body.active .page .content {
+    margin-left: 0;
+    width: 100%;
+    
+}
+
+.sidebar-header {
+    padding: 10px 15px;
+
+}
+
+.sidebar-logo-container {
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    padding-left: 5px;
+}
+
+.logo-container {
+    max-width: 40px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 6px;
+    margin: 8px;
+    padding: 6px 8px;
+    z-index: 99;
+}
+
+.logo-sidebar {
+    width: 100%;
+    height: auto;
+}
+
+.brand-name-container {
+    padding: 0px;
+    margin: 10px 10px 0px 2px;
+}
+
+.brand-name {
+    color: white;
+    margin: 0px;
+    line-height: 1.2rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 600;
+}
+
+.brand-subname {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.navigation-list {
+    list-style: none;
+    padding: 0px 18px;
+    margin-top: 30px;
+}
+
+.navigation-list-item {
+    
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    margin: 15px 0px;
+}
+
+.navigation-list-item:hover {
+    background: rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.navigation-list-item.active {
+    background: rgb(0, 0, 0, 0.15);
+    box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.navigation-link {
+    color: rgb(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.navigation-list-item:hover  .navigation-link {
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.navigation-list-item:active  .navigation-link {
+    color: rgb(255, 255, 255, 0.8);
+    font-weight: 600;
+}
+
+.navigation-link i {
+    font-size: 19px;
+}
+
+.navigationBar {
+    background: #03001e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc);
+    /*background-color: white; */
+    height: 50px;
+    padding: 38px 0px;
+    display: flex;
+    align-items: center;
+     box-shadow: 0 4px 2px -2px #c5c6c7;  
+} 
+
+.sidebarToggle {
+    font-size: 16px;
+    background-color: white ;
+    color: rgb (0, 0, 0, 0.8);
+    margin-left: -10px;
+    z-index: 999;
+    border-radius: 50px;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all 0.8s ease;
+}
+
+.sidebarToggle:hover {
+    color: white;
+}
+
+.sidebarToggle.active {
+    margin-left: 10px;
+    color: white;
+}
+
+/* accenture white logo */
+
+.acc-white {
+    padding: 0;
+    height: 55px;
+    width: auto;
+    position: absolute;
+    top: 5px;
+    left: 650px;
+}
+
+:root {
+    --veryDarkGreyBlue: hsl(237, 12%, 33%);
+    --softRed: hsl(14, 88%, 65%);
+    --darkGrayBlue: hsl(240, 6%, 50%);
+    --lightGrayBlue: hsl(240, 5%, 91%);
+    --fontSize: 12px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    margin: 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+    color: (--veryDarkGreyBlue);
+}
+
+/* Positioning Entire Form */
+.wrapper {
+    font-size: 12px;
+    height: 509px;
+    width: 920px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    grid-template-columns: 400px 1fr;
+    gap: 6rem;
+    background-image: url(/assets/img/bg-pattern-desktop\(1\).svg);
+    background-repeat: no-repeat;
+    background-position: 1110% 67%;
+    transform: translateY(65px);
+}
+
+/* Hide answer */
+
+.answer {
+    display: none;
+}
+
+.active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: var(--darkGrayBlue);
+  }
+
+/* Styling only the FAQ and Q&A section */
+.accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Div holding the questions. Excluding "FAQ" tag*/
+.accordion_questions {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* div containing both Q&A */
+.questions_answer_accordion {
+    width: 350px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.title_accordion {
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* fixing the down pointer arrow */
+.question  img {
+    align-self: center;
+}
+
+.image_wrapper {
+    position: relative;
+}
+
+.image_wrapper_inner {
+  background: url(/assets/img/illustration-woman-online-desktop.svg);
+  height: 100%;
+}
+
+.box {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+.active img {
+    transition: all 0.3s ease-in;
+}
